@@ -22,7 +22,7 @@ mod tests {
 
     #[test]
     fn test_false_1() {
-        assert_eq!(false, is_true(false))
+        assert_eq!(false, is_true(false));
     }
 
     #[test]
