@@ -19,4 +19,14 @@ mod tests {
     fn test_true_2() {
         assert_eq!(true, is_true(1 == 1));
     }
+
+    #[test]
+    fn test_false_1() {
+        assert_eq!(false, is_true(false))
+    }
+
+    #[test]
+    fn test_false_2() {
+        assert_eq!(false, is_true(1 != 1));
+    }
 }
