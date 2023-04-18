@@ -6,3 +6,5 @@ fn is_true(b: bool) -> bool {
     }
 }
 
+#[cfg(test)]
+mod tests {}
