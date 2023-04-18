@@ -7,4 +7,16 @@ fn is_true(b: bool) -> bool {
 }
 
 #[cfg(test)]
-mod tests {}
+mod tests {
+    use super::is_true;
+
+    #[test]
+    fn test_true_1() {
+        assert_eq!(true, is_true(true));
+    }
+
+    #[test]
+    fn test_true_2() {
+        assert_eq!(true, is_true(1 == 1));
+    }
+}
